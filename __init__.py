@@ -1,5 +1,13 @@
 import time
 import os
+import sys
+from pydub import AudioSegment
+from pydub.playback import play
+
+# for playing wav file
+def Play_Sound(sound_path):    
+    sound = AudioSegment.from_wav(sound_path)
+    play(sound)
 
 def Clear_Screen():
     """Clears the terminal screen."""
@@ -38,12 +46,7 @@ def Set_Option(word):
     listOfOptions.append(str(word))
 
 def Prompt_Options(prompt="Select an option"):
-    """Displays options and gets user choice.
-    Args:
-        prompt: Custom prompt text (default: "Select an option")
-    Returns:
-        The selected option number (1-based index)
-    """
+    """Displays options and gets user choice."""
     if not listOfOptions:
         raise ValueError("No options available to prompt")
     
@@ -59,3 +62,19 @@ def Prompt_Options(prompt="Select an option"):
             print(f"Please enter a number between 1 and {len(listOfOptions)}")
         except ValueError:
             print("Please enter a valid number.")
+
+def Display_Art(art_path):
+    try:
+        with open(art_path, "r") as file:
+            art = file.read()
+            print(art)
+    except FileNotFoundError:
+        print("Art file not found.")
+
+def New_Line():
+    """Prints a newline for spacing."""
+    print("\n")
+
+def Quit():
+    """Exits the program."""
+    sys.exit()
