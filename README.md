@@ -17,5 +17,9 @@ Currently, the engine is mostly unfinished and is in version 0.0.1.
 
 - Good FPS
 
+# Requirements
+- Python 3.10.11
+- pydub
+
 # Made With OAE
 No full released video games have been made with Open ASCII Engine. Have one? Tell us here: https://docs.google.com/forms/d/e/1FAIpQLSeq1QBqqjDRGYIOCL6qM5qrVZCJC4T8iiH1wYpdEopHRKOcTQ/viewform?usp=header
