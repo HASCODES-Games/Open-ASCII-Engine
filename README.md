@@ -1,5 +1,5 @@
 # Open ASCII Engine (OAE)
-Open ASCII Engine is a basic game engine written in python that simplifies the process of creating text-based video games.
+Open ASCII Engine is a basic game engine written in python that simplifies the process of creating text-based adventure video games/visual novels.
 
 # Version
 Currently, the engine is mostly unfinished and is in version 0.0.2.
@@ -20,6 +20,14 @@ Currently, the engine is mostly unfinished and is in version 0.0.2.
 - Customizability
 
 - Good FPS
+
+# WIP Features (subject to change or be removed)
+- Pre-built workspace for easy workflow
+
+# Future Goals
+- Colored text
+
+- Moved to C++ (still scriptable in Python)
 
 # Requirements
 - Python 3.10.11 (download here -> https://www.python.org/downloads/release/python-31011/)
