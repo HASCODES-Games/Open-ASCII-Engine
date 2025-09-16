@@ -4,6 +4,12 @@ import sys
 from pydub import AudioSegment
 from pydub.playback import play
 
+RED = '\033[31m'
+GREEN = '\033[32m'
+BLUE = '\033[34m'
+YELLOW = '\033[33m'
+RESET = '\033[0m'
+
 # for playing wav file
 def Play_Sound(sound_path):    
     sound = AudioSegment.from_wav(sound_path)
@@ -13,13 +19,14 @@ def Clear_Screen():
     """Clears the terminal screen."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def Write_Line(word, delay=0.1):
+def Write_Line(word, color, delay=0.1):
     """Prints text with a typewriter effect.
     Args:
         word: The text to display
         delay: Time between characters (default: 0.1s)
     """
     for char in word:
+        print(f"{color}", end='', flush=True)
         print(char, end='', flush=True)
         time.sleep(delay)
     print()
