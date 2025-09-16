@@ -2,7 +2,7 @@
 Open ASCII Engine is a basic game engine written in python that simplifies the process of creating text-based adventure video games/visual novels.
 
 # Version
-Currently, the engine is mostly unfinished and is in version 0.0.2.
+Currently, the engine is mostly unfinished and is in version 0.0.2 unstable.
 
 # Capabilities
 - Line writing with typewriter effect
@@ -23,6 +23,8 @@ Currently, the engine is mostly unfinished and is in version 0.0.2.
 
 # WIP Features (subject to change or be removed)
 - Pre-built workspace for easy workflow
+
+- Colored text
 
 # Future Goals
 - Colored text
