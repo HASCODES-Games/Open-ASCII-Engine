@@ -1,6 +1,14 @@
 import time
 import __init__ as init
 
+RED = '\033[31m'
+GREEN = '\033[32m'
+BLUE = '\033[34m'
+YELLOW = '\033[33m'
+ORANGE = '\033[38;5;208m'
+GOLD = '\033[38;5;220m'
+RESET = '\033[0m'
+
 def Gameloop():
     """Main game loop function"""
     init.Write_Line("You are now in the game!")
@@ -10,7 +18,7 @@ def Gameloop():
 
 def game():
     # Initialize game
-    init.Write_Line("Welcome to the game!")
+    init.Write_Line("Welcome to the game!", BLUE)
     time.sleep(1)
     
     # Reset and set options
@@ -32,7 +40,7 @@ def game():
             pass
             
     elif choice == 2:
-        init.Write_Line("Exiting the game...")
+        init.Write_Line("Exiting the game...", RED)
         time.sleep(1)
         return
         init.Clear_Screen()
